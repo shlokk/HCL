@@ -7,7 +7,8 @@ This repo contains the pytorch implementation of the paper: **Hyperbolic Contras
 
 The openimages dataset can be downloaded from this github repo https://github.com/shlokk/object-cropping-ssl.
 
-To run the HCL scripts 
+###  Pre-Training
+
 ```
 python main_hcl.py -a resnet50 --lr 0.15 --batch-size 128 --c 0.05 \
                                --dist-url 'tcp://localhost:10024' --world-size 1 --rank 0 --moco-dim 128 \
@@ -15,6 +16,8 @@ python main_hcl.py -a resnet50 --lr 0.15 --batch-size 128 --c 0.05 \
                                --save_dir . --multiprocessing-distributed --dataset-type hierarchy_diff_crop --theta-moco 1 --theta-hyperbolic 0.1 \
                                --DATAPATH  'path to all_images' 
 ```
+
+###  Linear Probing
 ```
 Lincls script:
 python main_lincls.py \
