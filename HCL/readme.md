@@ -4,6 +4,7 @@ This repo contains the pytorch implementation of the paper: **Hyperbolic Contras
   <img src="teaser_hyperbolic.png" width="450" title="hover text">
 </p>
 
+### Dataset Download
 
 The openimages dataset can be downloaded from this github repo https://github.com/shlokk/object-cropping-ssl.
 
