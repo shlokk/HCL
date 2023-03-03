@@ -1,3 +1,10 @@
+This repo contains the pytorch implementation of the paper: **Hyperbolic Contrastive Learning for Visual Representations beyond Objects (CVPR 2023).**
+
+<p align="center">
+  <img src="teaser_hyperbolic.png" width="650" title="hover text">
+</p>
+
+
 The openimages dataset can be downloaded from this github repo https://github.com/shlokk/object-cropping-ssl.
 
 To run the HCL scripts 
@@ -17,4 +24,26 @@ python main_lincls.py \
   --pretrained [your checkpoint path]/checkpoint_0199.pth.tar \
   --dist-url 'tcp://localhost:10001' --multiprocessing-distributed --world-size 1 --rank 0 \
   [your imagenet-folder with train and val folders]
+```
+
+## BibTeX
+
+```
+@article{Ge2022HyperbolicCL,
+  title={Hyperbolic Contrastive Learning for Visual Representations beyond Objects},
+  author={Songwei Ge and Shlok Kumar Mishra and Simon Kornblith and Chun-Liang Li and David Jacobs},
+  journal={ArXiv},
+  year={2022},
+  volume={abs/2212.00653}
+}
+
+@article{
+mishra2022objectaware,
+title={Object-aware Cropping for Self-Supervised Learning},
+author={Shlok Kumar Mishra and Anshul Shah and Ankan Bansal and Janit K Anjaria and Abhyuday Narayan Jagannatha and Abhishek Sharma and David Jacobs and Dilip Krishnan},
+journal={Transactions on Machine Learning Research},
+year={2022},
+url={https://openreview.net/forum?id=WXgJN7A69g},
+note={}
+}
 ```
