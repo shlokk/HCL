@@ -1,7 +1,7 @@
 This repo contains the pytorch implementation of the paper: **Hyperbolic Contrastive Learning for Visual Representations beyond Objects (CVPR 2023).**
 
 <p align="center">
-  <img src="teaser_hyperbolic.png" width="650" title="hover text">
+  <img src="teaser_hyperbolic.png" width="450" title="hover text">
 </p>
 
 
