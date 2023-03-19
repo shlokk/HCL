@@ -5,8 +5,11 @@ This repo contains the pytorch implementation of the paper: **Hyperbolic Contras
 </p>
 
 ### Preparation
+Command for creating and activating conda enviroment.
+```
 conda env create -f environment_hcl.yml
-
+conda activate hcl
+```
 ### Dataset Download
 
 The openimages dataset can be downloaded from this github repo https://github.com/shlokk/object-cropping-ssl.
