@@ -21,12 +21,11 @@ import torch.utils.data.distributed
 import torchvision.transforms as transforms
 import torchvision.datasets as datasets
 import torchvision.models as models
-from .openimages_dataset_hierarchy_diff_crop_gtbbox import  OpenImages as  OpenImages_diff_crop_gtbbox
+from openimages_dataset_hierarchy_diff_crop_gtbbox import  OpenImages as  OpenImages_diff_crop_gtbbox
 
 import moco.loader
 
 import moco.builder_hcl as builder
-from datasets import get_trainval_datasets
 
 model_names = sorted(name for name in models.__dict__
     if name.islower() and not name.startswith("__")
