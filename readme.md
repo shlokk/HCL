@@ -4,7 +4,7 @@ This repo contains the pytorch implementation of the paper: **Hyperbolic Contras
   <img src="teaser_hyperbolic.png" width="450" title="hover text">
 </p>
 
-### enviroment
+### Preparation
 conda env create -f environment_hcl.yml
 
 ### Dataset Download
@@ -32,6 +32,10 @@ python main_lincls.py \
   --dist-url 'tcp://localhost:10001' --multiprocessing-distributed --world-size 1 --rank 0 \
   [your imagenet-folder with train and val folders]
 ```
+
+### Pre-trained models.
+Our pre-trained models can be found at https://drive.google.com/drive/folders/1WIFw6dl5OrwCpfj6Q-PqXOc_4Mrv1BTZ.
+
 
 ## BibTeX
 
